@@ -8,26 +8,16 @@ class Solution:
     # @param head, a ListNode
     # @return a ListNode
     def deleteDuplicates(self, head):
-        if head == None:
-            return None
-        if head.next == None:
-            return head
-        else:
-            another = head
-            tag = head.next
-            while tag.next != None:
-                if head.val == tag.val:
-                    tag = tag.next
-                else:
-                    head.next = tag
-                    head = tag
-                    tag = tag.next
-            if tag.next == None:
-                if head.val == tag.val:
-                    head.next = None
-                else:
-                    head.next = tag
-                
-        return another
-            
-        
+		if head == None:
+			return None
+		if head.next == None:
+			return head	
+		another = head
+		while head.next != None: 
+		    while head.val != head.next.val:
+		        head.next = head.next
+                head = head.next
+            head.next = None
+		return another
+#Error_1 Time Limit Exceeded:
+#
