@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 # UnboundLocalError: local variable 'sum' referenced before assignment
-# Solution:
+# Solution: declare it as class variable instead of a variable in a function.
 
 class Solution:
     # @param root, a tree node
