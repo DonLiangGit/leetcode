@@ -15,4 +15,5 @@ class Solution:
         elif p == None or q == None:
         	return False
         # == return a boolean, we use the boolean operation judge a two tree
-        return p.val == q.val and self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+        return p.val == q.val and self.isSameTree(p.left, q.left) 
+        and self.isSameTree(p.right, q.right)

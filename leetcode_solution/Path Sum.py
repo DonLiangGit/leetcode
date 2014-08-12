@@ -15,8 +15,8 @@ class Solution:
         	return False
         # case 2: if the tree only has one root node, compare the valut to target
         if root.left == None and root.right == None:
+            # return whether the root.val is equal to sum, returns a boolean value.
         	return root.val == sum
-
         # case 3: otherwise, return OR
         # Called Logical OR Operator. If any of the two operands are non zero then then condition becomes true.
         return self.hasPathSum(root.left, sum - root.val) or self.hasPathSum(root.right, sum - root.val)
