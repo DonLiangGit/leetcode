@@ -28,7 +28,7 @@ public class Solution {
 					headForward.next = compareNode;
 					compareNode = compareNode.next;
 				} else {
-					headForward =  compareNode;
+					headForward =  compareNode.next;
 					compareNode = compareNode.next;
 				}
 			}
